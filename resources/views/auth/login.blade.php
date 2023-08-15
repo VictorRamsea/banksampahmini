@@ -10,7 +10,7 @@
                     </div>
                     <div class="login-right">
                         <div class="login-right-wrap">
-                            <h1>SMK N 7 Bandar Lampung YANTI YANTO UHUY</h1><br>
+                            <h1>SMK N 7 Bandar Lampung</h1><br>
                             @if ($errors->any())
                                 <div class="alert alert-danger">
                                     <ul>
