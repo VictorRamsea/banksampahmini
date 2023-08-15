@@ -1,0 +1,7 @@
+  ---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/bank8278/banksampah/
+    - /bin/rm -Rf $DEPLOYPATH
+    - /bin/mkdir $DEPLOYPATH
+    - /bin/cp -R src/. $DEPLOYPATH
