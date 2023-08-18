@@ -47,7 +47,7 @@
                                     </thead>
                                     <tbody>
                                         <?php
-                                        $koneksi = new mysqli('localhost', 'bank8278_bankminita', 'Ranadias3', 'bank8278_bankminita');
+                                        $koneksi = new mysqli('localhost', 'bank8278_bankminitabaru', 'Ranadias3', 'bank8278_bankminitabaru');
                                         $jurusan = $kelas->jurusan_kelas;
                                         $prodi = $kelasd->prodi_kelas;
                                         $kelas = $kelasd->kelas;
@@ -89,7 +89,7 @@
                                     </thead>
                                     <tbody>
                                         <?php
-                                        $koneksi = new mysqli('localhost', 'bank8278_bankminita', 'Ranadias3', 'bank8278_bankminita');
+                                        $koneksi = new mysqli('localhost', 'bank8278_bankminitabaru', 'Ranadias3', 'bank8278_bankminitabaru');
                                         $total2 = [];
                                         $query = mysqli_query($koneksi, "SELECT * FROM users WHERE kelas_user = '$kelas $jurusan $prodi'");
                                         while ($data = mysqli_fetch_array($query)) {
