@@ -46,7 +46,7 @@
                                             </tr>
                                         </thead>
                                         <?php
-                                    $koneksi = new mysqli('localhost', 'root', '', 'bankminita');
+                                    $koneksi = new mysqli('localhost', 'bank8278_bankminitabaru', 'Ranadias3', 'bank8278_bankminitabaru');
                                     $nama = $name;
                                     $no = 0;
                                     $query    = mysqli_query($koneksi, "SELECT * FROM transaksi WHERE fullname_transaksi = '$nama' AND kategori_transaksi = 'tabungan'");
@@ -86,7 +86,7 @@
                                             </tr>
                                         </thead>
                                         <?php
-                                    $koneksi = new mysqli('localhost', 'root', '', 'bankminita');
+                                    $koneksi = new mysqli('localhost', 'bank8278_bankminitabaru', 'Ranadias3', 'bank8278_bankminitabaru');
                                     $nama = $name;
                                     $no = 0;
                                     $query    = mysqli_query($koneksi, "SELECT * FROM transaksi WHERE fullname_transaksi = '$nama' AND kategori_transaksi = 'penarikan'");
@@ -126,7 +126,7 @@
                                             </tr>
                                         </thead>
                                         <?php
-                                    $koneksi = new mysqli('localhost', 'root', '', 'bankminita');
+                                    $koneksi = new mysqli('localhost', 'bank8278_bankminitabaru', 'Ranadias3', 'bank8278_bankminitabaru');
                                     $nama = $name;
                                     $no = 0;
                                     $query    = mysqli_query($koneksi, "SELECT * FROM transaksi WHERE fullname_transaksi = '$nama' AND kategori_transaksi = 'transfer'");

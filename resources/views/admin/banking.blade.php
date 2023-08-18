@@ -50,7 +50,7 @@
                                             </tr>
                                         </thead>
                                         <?php
-                                    $koneksi = new mysqli('localhost', 'root', '', 'bankminita');
+                                    $koneksi = new mysqli('localhost', 'bank8278_bankminitabaru', 'Ranadias3', 'bank8278_bankminitabaru');
                                     $no = 0;
                                     $query    = mysqli_query($koneksi, "SELECT * FROM transaksi WHERE kategori_transaksi = 'tabungan' ORDER BY id_transaksi DESC");
                                     while ($result    = mysqli_fetch_array($query)) {
@@ -75,8 +75,7 @@
                                                     <a href="/admin/banking_tabungan_edit/<?= $result['id_transaksi'] ?>"
                                                         class="btn btn-warning"><i
                                                             class="fa-sharp fa-solid fa-pencil"></i></a>
-                                                    <form
-                                                        action="/admin/transaksi_hapus/<?= $result['id_transaksi'] ?>"
+                                                    <form action="/admin/transaksi_hapus/<?= $result['id_transaksi'] ?>"
                                                         method="post" class="d-inline">
                                                         <?= csrf_field() ?>
                                                         <input type="hidden" name="_method" value="delete">
@@ -117,7 +116,7 @@
                                             </tr>
                                         </thead>
                                         <?php
-                                    $koneksi = new mysqli('localhost', 'root', '', 'bankminita');
+                                    $koneksi = new mysqli('localhost', 'bank8278_bankminitabaru', 'Ranadias3', 'bank8278_bankminitabaru');
                                     $no = 0;
                                     $query    = mysqli_query($koneksi, "SELECT * FROM transaksi WHERE kategori_transaksi = 'penarikan' ORDER BY id_transaksi DESC");
                                     while ($result    = mysqli_fetch_array($query)) {
@@ -142,8 +141,7 @@
                                                     <a href="/admin/banking_penarikan_edit/<?= $result['id_transaksi'] ?>"
                                                         class="btn btn-warning"><i
                                                             class="fa-sharp fa-solid fa-pencil"></i></a>
-                                                    <form
-                                                        action="/admin/transaksi_hapus/<?= $result['id_transaksi'] ?>"
+                                                    <form action="/admin/transaksi_hapus/<?= $result['id_transaksi'] ?>"
                                                         method="post" class="d-inline">
                                                         @csrf
                                                         <input type="hidden" name="_method" value="delete">
@@ -184,7 +182,7 @@
                                             </tr>
                                         </thead>
                                         <?php
-                                    $koneksi = new mysqli('localhost', 'root', '', 'bankminita');
+                                    $koneksi = new mysqli('localhost', 'bank8278_bankminitabaru', 'Ranadias3', 'bank8278_bankminitabaru');
                                     $no = 0;
                                     $query    = mysqli_query($koneksi, "SELECT * FROM transaksi WHERE kategori_transaksi = 'transfer' ORDER BY id_transaksi DESC");
                                     while ($result    = mysqli_fetch_array($query)) {
@@ -209,8 +207,7 @@
                                                     <a href="/admin/banking_transfer_edit/<?= $result['id_transaksi'] ?>"
                                                         class="btn btn-warning"><i
                                                             class="fa-sharp fa-solid fa-pencil"></i></a>
-                                                    <form
-                                                        action="/admin/transaksi_hapus/<?= $result['id_transaksi'] ?>"
+                                                    <form action="/admin/transaksi_hapus/<?= $result['id_transaksi'] ?>"
                                                         method="post" class="d-inline">
                                                         @csrf
                                                         <input type="hidden" name="_method" value="delete">

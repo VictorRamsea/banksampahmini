@@ -42,7 +42,7 @@
                                         </thead>
                                         <tbody>
                                             <?php
-                                        $koneksi = new mysqli('localhost', 'root', '', 'bankminita');
+                                        $koneksi = new mysqli('localhost', 'bank8278_bankminitabaru', 'Ranadias3', 'bank8278_bankminitabaru');
                                         $nama = $name;
                                         $no = 0;
                                         $query    = mysqli_query($koneksi, "SELECT * FROM tabungan WHERE fullname_tabungan = '$nama' ORDER BY id_tabungan DESC");
@@ -79,7 +79,7 @@
                                         </thead>
                                         <tbody>
                                             <?php
-                                        $koneksi = new mysqli('localhost', 'root', '', 'bankminita');
+                                        $koneksi = new mysqli('localhost', 'bank8278_bankminitabaru', 'Ranadias3', 'bank8278_bankminitabaru');
                                         $nama = $name;
                                         $no = 0;
                                         $query    = mysqli_query($koneksi, "SELECT * FROM penarikan WHERE fullname_penarikan = '$nama' ORDER BY id_penarikan DESC");

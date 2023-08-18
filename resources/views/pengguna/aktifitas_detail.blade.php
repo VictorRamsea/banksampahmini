@@ -16,7 +16,7 @@
         <div class="card-body">
             <table class="table">
                 <?php
-                $koneksi = new mysqli('localhost', 'root', '', 'bankminita');
+                $koneksi = new mysqli('localhost', 'bank8278_bankminitabaru', 'Ranadias3', 'bank8278_bankminitabaru');
                 $nama = $name;
                 $no = 0;
                 $query = mysqli_query($koneksi, "SELECT * FROM aktifitas WHERE penerima_aktifitas = '$nama' AND kegiatan_aktifitas = 'transfer' ORDER BY id_aktifitas DESC");
