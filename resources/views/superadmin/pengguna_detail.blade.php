@@ -121,7 +121,7 @@
                                     </thead>
                                     <tbody>
                                         <?php
-                                        $koneksi = new mysqli('localhost', 'bank8278_bankminita', 'arre007A', 'bank8278_bankminita');
+                                        $koneksi = new mysqli('localhost', 'bank8278_bankminitabaru', 'Ranadias3', 'bank8278_bankminitabaru');
                                         $nama = $users->username;
                                         $id = $userid;
                                         $query = mysqli_query($koneksi, "SELECT * FROM tabungan WHERE username_tabungan = '$nama'");
@@ -167,7 +167,7 @@
                                     </thead>
                                     <tbody>
                                         <?php
-                                        $koneksi = new mysqli('localhost', 'bank8278_bankminita', 'arre007A', 'bank8278_bankminita');
+                                        $koneksi = new mysqli('localhost', 'bank8278_bankminitabaru', 'Ranadias3', 'bank8278_bankminitabaru');
                                         $nama = $users->username;
                                         $query = mysqli_query($koneksi, "SELECT * FROM penarikan WHERE username_penarikan = '$nama'");
                                         $result = mysqli_fetch_array($query);
