@@ -39,7 +39,7 @@
                             $koneksi = new mysqli('localhost', 'bank8278_bankminitabaru', 'Ranadias3', 'bank8278_bankminitabaru');
                             $nama = $name;
                             $no = 0;
-                            $query    = mysqli_query($koneksi, "SELECT * FROM transaksi_sampah WHERE fullname_sampah = '$nama'");
+                            $query    = mysqli_query($koneksi, "SELECT * FROM transaksi_sampahff WHERE fullname_sampah = '$nama'");
                             while ($result    = mysqli_fetch_array($query)) {
                                 $no++
                             ?>

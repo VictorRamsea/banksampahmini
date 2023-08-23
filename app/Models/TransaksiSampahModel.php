@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class TransaksiSampahModel extends Model
 {
     use HasFactory;
-    protected $table = 'transaksi_sampahff';
+    protected $table = 'transaksi_sampahffff';
     public $timestamps = false;
-    protected $guarded = ['id_transaksi_sampah'];
-    protected $primaryKey = 'id_transaksi_sampah';
+    protected $guarded = ['id_transaksi_sampahff'];
+    protected $primaryKey = 'id_transaksi_sampahff';
 }
